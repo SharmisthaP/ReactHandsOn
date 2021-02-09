@@ -1,0 +1,22 @@
+button{
+
+    width: 100px;
+    background-color: forestgreen;
+    color: white;
+    padding: 10px;
+}
+.center{
+   
+    text-align: center;
+}
+table{
+   
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 200px 0;
+
+}
+
+td {
+    padding: 200px 0;
+  }
