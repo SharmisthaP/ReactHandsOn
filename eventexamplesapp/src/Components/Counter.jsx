@@ -1,5 +1,15 @@
 import React, { Component } from 'react';
 
+const CustomButton = ({ onPress }) => {
+    return (
+      <button type="button" onClick={onPress}>
+        Click on me
+      </button>
+    );
+  }
+
+
+
 class Counter extends Component {
     constructor(props) {
         super(props);
@@ -27,6 +37,10 @@ class Counter extends Component {
    sayWelcome(msg) {
     alert(msg);
    }
+   handleEvent = () => {
+    alert("I was clicked");
+  };
+    
     render() { 
         return ( 
             <div>
@@ -34,6 +48,7 @@ class Counter extends Component {
                 <button onClick={this.increment}>Increment</button><br/>
                 <button onClick={this.decrement}>Decrement</button><br/>
                 <button onClick={() => this.sayWelcome("welcome")}> Say welcome </button><br/>
+                <CustomButton onPress={this.handleEvent} /><br/>
                 
             </div>
          );
